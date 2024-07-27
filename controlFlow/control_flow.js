@@ -53,3 +53,38 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not Authenticated";
 
 console.log("Authentication Status: ", authenticationStatus);
+
+let user = "something";
+let accessService;
+
+if (user === "Employee") {
+    accessService = "can access to Dietary Services.";
+}
+else if (user === "Enrolled Member") {
+    accessService = "can access to Dietary Services and one-on-one interaction with a dietician.";
+}
+else if (user === "Subscriber") {
+    accessService = "have partial access to Dietary Services only."
+}
+else {
+    accessService = "Enroll or at least subscribe first to avail this facility."
+}
+
+console.log(user + " " + accessService);
+
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+
+const add = (a, b) => a + b;
+
+console.log(add(3, 8))
+
+const greet = () => {
+    console.log("Hello!, World!");
+};
+
+function add(a, b) {
+    return a + b;
+}
+document.getElementById("returndemo").innerHTML = add (50, 40);
